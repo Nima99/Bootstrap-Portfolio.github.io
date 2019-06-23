@@ -76,13 +76,16 @@ h3 {
   text-decoration: none;
   background: #4aaaa5;
 }
-
+/* i dont know how to change a certain code when not using media querys
+but i think thats normal, if not please let me know how i could have changed the nav to look better for the iphone with only bootstrap. */
 .nav-item {
   float: right;
   margin-top: 25px;
 }
 
 .nav-link  {
+  position: relative;
+  float: initial;
   display: inline-block;
   padding-left: 15px;
   margin-left: 15px;
@@ -149,6 +152,7 @@ h3, h2 {
 }
 
 .work img {
+  position: static;
   width: 100%;
   border: 0 none;
   opacity: 0.8;
