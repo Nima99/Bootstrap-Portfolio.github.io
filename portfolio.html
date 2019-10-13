@@ -6,9 +6,25 @@
   <title>Portfolio | Nima Akhaveissy</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript">
+    function myFun(){
+    var randcol= "";
+    var allchar="0123456789ABCDEF";
+    for(var i=0; i<6; i++){
+       randcol += allchar[Math.floor(Math.random()*16)];
+
+
+    }
+
+     document.body.style.backgroundColor= "#"+randcol;
+
+    }
+</script>
 </head>
 
 <body>
+
+    <button onclick="javascript:myFun()">Change color</button>
 
   <header id="masthead">
     <div class="container">
@@ -75,8 +91,7 @@
         </div>
         
         <div class="work" style="border: 2px solid;text-align:right">
-            
-            
+                        
             <img src="./assests/Funny-Beer-Meme-You-Got-My-Nose-I-Got-Your-Beer-Picture.jpg" alt="beer-pic">
             
             <a href='https://nima99.github.io/project-1/'><h3>project-1</h3></a>
@@ -84,9 +99,10 @@
           </div>
           
           <div class="work" style="border: 2px solid;text-align:right">
-          <img src="./assests/download.png" alt="Rutgers Info Widget">
-          
-            <h3>to be added</h3>
+          <img src="" alt="Rutgers Info Widget">
+
+          <!-- https://github.com/Nima99/Project-2 -->
+           <a href='https://github.com/Nima99/Project-2'><h3>project-2</h3></a>
           </div>
     </section>
 

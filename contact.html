@@ -6,10 +6,27 @@
   <title>Contact | Nima Akhaveissy</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./style.css">
+
+          <script type="text/javascript">
+            function myFun(){
+            var randcol= "";
+            var allchar="0123456789ABCDEF";
+            for(var i=0; i<6; i++){
+               randcol += allchar[Math.floor(Math.random()*16)];
+        
+        
+            }
+        
+             document.body.style.backgroundColor= "#"+randcol;
+        
+            }
+        </script>
 </head>
 
 <body>
-
+  
+  <button onclick="javascript:myFun()">Change color</button>
+  
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Nima Akhaveissy</a>
@@ -64,6 +81,7 @@
     </section>
 
   </div>
+
 
   <footer>
     <div class="container">
